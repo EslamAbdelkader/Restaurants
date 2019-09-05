@@ -4,6 +4,10 @@ import androidx.annotation.Nullable
 import androidx.recyclerview.widget.DiffUtil
 import com.eslam.takeaway.restaurants.model.RestaurantUIModel
 
+/**
+ * Responsible for calculating the differences between two lists of [RestaurantUIModel]
+ * for better user experience and better performance
+ */
 class RestaurantDiffCallback(private val oldList: List<RestaurantUIModel>,
                              private val newList: List<RestaurantUIModel>
 ): DiffUtil.Callback() {

@@ -2,6 +2,7 @@
   <dictionary name="eslam">
     <words>
       <w>interactor</w>
+      <w>mvvm</w>
       <w>snackbar</w>
       <w>unfavorite</w>
       <w>unmark</w>
