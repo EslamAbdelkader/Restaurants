@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TakeAway</string>
+    <string name="status_placeholder">Status: %s</string>
+    <string name="score_placeholder">Score: %s</string>
+</resources>

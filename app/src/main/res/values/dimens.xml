@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="restaurant_row_horizontal_margin">24dp</dimen>
+    <dimen name="restaurant_row_vertical_margin">8dp</dimen>
+    <dimen name="restaurant_row_title_size">16sp</dimen>
+    <dimen name="restaurant_row_icon_width">32dp</dimen>
+</resources>

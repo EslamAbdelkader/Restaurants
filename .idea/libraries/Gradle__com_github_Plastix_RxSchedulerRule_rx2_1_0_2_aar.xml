@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Plastix.RxSchedulerRule:rx2:1.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bcd253e12aecb2620a08465e8ea5c37c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bcd253e12aecb2620a08465e8ea5c37c/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Plastix.RxSchedulerRule/rx2/1.0.2/3e70b4082ebb511e158c80183a678a011d556861/rx2-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
