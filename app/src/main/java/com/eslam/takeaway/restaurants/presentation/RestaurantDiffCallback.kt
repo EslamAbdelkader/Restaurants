@@ -20,7 +20,7 @@ class RestaurantDiffCallback(private val oldList: List<RestaurantUIModel>,
     }
 
     override fun areContentsTheSame(oldPosition: Int, newPosition: Int): Boolean {
-        return oldList[oldPosition].isFavorite == newList[newPosition].isFavorite
+        return oldList[oldPosition] == newList[newPosition]
     }
 
     @Nullable
