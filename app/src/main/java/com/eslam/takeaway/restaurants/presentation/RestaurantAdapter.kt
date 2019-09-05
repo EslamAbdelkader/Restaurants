@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.row_restaurant.view.*
  * RecyclerView adapter for restaurants for the overview screen
  */
 class RestaurantAdapter(
-    private val restaurants: List<RestaurantUIModel>,
+    var restaurants: List<RestaurantUIModel>,
     private val consumer: Consumer<RestaurantUIModel>
 ) :
     RecyclerView.Adapter<RestaurantAdapter.ViewHolder>() {

@@ -6,6 +6,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.core.util.Consumer
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.eslam.takeaway.R
@@ -74,10 +75,19 @@ class RestaurantsActivity : AppCompatActivity() {
     /**
      * Notifies the adapter with the changed list of restaurants
      */
-    private fun updateList(restaurant: List<RestaurantUIModel>) {
-        recyclerView.adapter = RestaurantAdapter(
-            restaurant,
-            Consumer { viewModel.onFavoriteClicked(it) }
-        )
+    private fun updateList(restaurants: List<RestaurantUIModel>) {
+        if (recyclerView.adapter == null) {
+            recyclerView.adapter = RestaurantAdapter(
+                restaurants,
+                Consumer { viewModel.onFavoriteClicked(it) }
+            )
+        } else {
+            val adapter = recyclerView.adapter!! as RestaurantAdapter
+            val oldList = adapter.restaurants
+            val diffCallback = RestaurantDiffCallback(oldList, restaurants)
+            val diffResult = DiffUtil.calculateDiff(diffCallback)
+            adapter.restaurants = restaurants
+            diffResult.dispatchUpdatesTo(adapter)
+        }
     }
 }
